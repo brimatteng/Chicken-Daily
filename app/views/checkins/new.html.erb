@@ -1,0 +1,6 @@
+<h1>Checkins#new</h1>
+<%= form_with model: @checkin, url: [@user, @checkin], class: "nifty_form" do |f| %>
+  <%= f.number_field :rating %>
+  <%= f.date_field :date %>
+  <%= f.submit "Create" %>
+<% end %>
